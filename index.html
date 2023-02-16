@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form because I am in a need of friends</p>
+    <form id="survey-form">
+      <fieldset id="user">
+        <label id="name-label" for="first-name">Enter Your Full Name: <input id="name" name="full-name" type="text" placeholder=" Full Name?" required /></label>
+        <label id="email-label" for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder=" youremail@gmail.com" required /></label>
+        <label for="bio"> Any Hobbies? :
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I love watching shrek"></textarea>
+        </label>
+        <label id="number-label">Age: <input id="number" type="number" min="0" max="6000" placeholder="are you old"></label>
+      </fieldset>
+        <fieldset id="Questions">
+          <center><p>Do you like Music?</p></center>
+          <label class="music"> Pop <input id="pop" name="music" type="radio" value="Pop">
+          <span class="radio"></span></label><br>
+
+          <label class="music"> Rock <input id="rock" name="music" type="radio" value="Rock"> <span class="radio"></span></label><br>
+
+          <label class="music"> Classical <input id="classical" name="music" type="radio" value="Classic"><span class="radio"></span></label><br>
+
+          <label class="music"> Indie <input id="indie" name="music" type="radio" value="Indie"><span class="radio"></span></label><br>
+
+          <label class="music"> Metal <input id="metal" name="music" type="radio" value="Metal"><span class="radio"></span></label><br>
+
+          <label class="music"> RGB <input id="rgb" name="music" type="radio" value="RGB"><span class="radio"></span></label><br>
+      </fieldset>
+      <fieldset>
+        <center><p>Do you play games?</p></center>
+        <details class="custom-select">
+	<summary class="radios">
+		<input type="radio" name="item" id="default" title="Games"value="default" checked>
+		<input type="radio" name="item" id="item1" title="Item 1" value="Mobile">
+		<input type="radio" name="item" id="item2" title="Item 2" value="PC">
+		<input type="radio" name="item" id="item3" title="Item 3" value="No">
+		<input type="radio" name="item" id="item4" title="Item 4" value="sometimes">
+		<input type="radio" name="item" id="item5" title="Item 5" value="nahh">
+	</summary>
+	<ul class="list">
+		<li>
+			<label for="item1">
+				PC Games
+				<span></span>
+			</label>
+		</li>
+		<li>
+			<label for="item2">Mobile Games</label>
+		</li>
+		<li>
+			<label for="item3">I don't play games</label>
+		</li>
+		<li>
+			<label for="item4">I play games sometimes</label>
+		</li>
+		<li>
+			<label for="item5">I prefer something else</label>
+		</li>
+	</ul>
+</details>
+      </fieldset>
+
+      <fieldset>
+      <label class="hobbies">Any Hobbies?<textarea id="hobbies" name="hobby" rows="3" cols="30" placeholder=" Hobbies"></textarea></label>
+      </fieldset>
+      <fieldset>
+        Wanna be friends?
+        <select id="dropdown">
+          <option value="yes"> Yes</option>
+          <option value="no"> No lol </option>
+          <option value="maybe"> Maybe</option>
+          <option value="who r u"> who r u</option>
+        </select></fieldset>
+        <fieldset>
+        <p>Do you use Social Media?</p>
+         <label class="socmed">Instagram<input type="checkbox" name="PC-games" value="IG"><span class="checkmark"></span></label>
+         <label class="socmed">Twitter<input type="checkbox" name="PC-games" value="Tw"><span class="checkmark"></span></label>
+         <label class="socmed">Discord<input type="checkbox" name="PC-games" value="Dc"><span class="checkmark"></span></label>
+         <label class="socmed">Telegram<input type="checkbox" name="PC-games" value="Tg"><span class="checkmark"></span></label>
+         <label class="socmed">Facebook<input type="checkbox" name="PC-games" value="Fb"><span class="checkmark"></span></label>
+         <label class="socmed">Other<input type="checkbox" name="PC-games" value="Other"><span class="checkmark"></span></label><br>
+
+      <label class="hobbies">What's your account?<textarea id="hobbies" name="hobby" rows="3" cols="30" placeholder="It's alright if you don't want to, just put 'no' "></textarea></label>
+      
+
+      </fieldset>
+      <!-- Submit Button Below ^^-->
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
