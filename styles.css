@@ -224,7 +224,7 @@ color: #F2F2F2;
 
 details {
 	position: relative;
-	width: 500px;
+	width: 300px;
 	margin-right: 1rem;
 }
 
@@ -354,6 +354,10 @@ label span {
   /*End of Select-Dropdown Design*/
 /*FOOTER*/
 
+#dc{
+  display: inline;
+  font-size: small;
+}
 .footer-basic {
   padding:40px 0;
   background-color: transparent;
