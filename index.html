@@ -25,12 +25,12 @@
 	    <input type="hidden" name="_next" value="https://cheesestisck.github.io/friendform/success.html">
 	    
       <fieldset id="user">
-        <label id="name-label" for="first-name">Enter Your Full Name: <input id="name" name="full-name" type="text" placeholder=" Full Name?" required /></label>
-        <label id="email-label" for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder=" youremail@gmail.com" required /></label>
+        <label id="name-label" for="first-name">Enter Your Full Name: <input id="name" name="Full&nbspName" type="text" placeholder=" Full Name?" required /></label>
+        <label id="email-label" for="email">Enter Your Email: <input id="email" name="Email" type="email" placeholder=" youremail@gmail.com" required /></label>
         <label for="bio"> Any Hobbies? :
-          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I love watching shrek"></textarea>
+          <textarea id="bio" name="Hobby" rows="3" cols="30" placeholder="I love watching shrek"></textarea>
         </label>
-        <label id="number-label">Age: <input id="number" type="number" min="0" max="6000" placeholder="are you old"></label>
+        <label id="number-label">Age: <input id="number" name="age" type="number" min="0" max="6000" placeholder="are you old"></label>
       </fieldset>
         <fieldset id="Questions">
           <center><p>Do you like Music?</p></center>
@@ -51,12 +51,12 @@
         <center><p>What do we have in common?</p></center>
         <details>
 	<summary class="radios">
-		<input type="radio" name="item" id="default" title="I like..." value="default" checked>
-		<input type="radio" name="item" id="item1" title="Reading Novels" value="Novels">
-		<input type="radio" name="item" id="item2" title="Comics" value="Comics">
-		<input type="radio" name="item" id="item3" title="Drawing and Painting" value="Draw&Paint">
-		<input type="radio" name="item" id="item4" title="Making memes" value="Memes">
-		<input type="radio" name="item" id="item5" title="Having an existential crisis" value="Cry">
+		<input type="radio" name="They&nbsplike&nbsp..." id="default" title="I like..." value="default" checked>
+		<input type="radio" name="They&nbsplike&nbsp..." id="item1" title="Reading Novels" value="Novels">
+		<input type="radio" name="They&nbsplike&nbsp..." id="item2" title="Comics" value="Comics">
+		<input type="radio" name="They&nbsplike&nbsp..." id="item3" title="Drawing and Painting" value="Draw&Paint">
+		<input type="radio" name="They&nbsplike&nbsp..." id="item4" title="Making memes" value="Memes">
+		<input type="radio" name="They&nbsplike&nbsp..." id="item5" title="Having an existential crisis" value="Having an existential crisis">
   </summary>
 	<ul class="list">
 		<li id="1">
@@ -78,16 +78,13 @@
 </details>
       </fieldset>
 
-      <fieldset id="hobbies">
-      <label class="hobbies">Any Hobbies?<textarea id="hobbies" name="hobby" rows="3" cols="30" placeholder=" Hobbies"></textarea></label>
-      </fieldset>
       <fieldset id="friend">
         Wanna be friends?
         <select id="dropdown">
-          <option value="yes"> Yes</option>
-          <option value="no"> No lol </option>
-          <option value="maybe"> Maybe</option>
-          <option value="who r u"> who r u</option>
+          <option name="wanna&nbspbe&nbspfriends" value="yes"> Yes</option>
+          <option name="wanna&nbspbe&nbspfriends" value="no"> No lol </option>
+          <option name="wanna&nbspbe&nbspfriends" value="maybe"> Maybe</option>
+          <option name="wanna&nbspbe&nbspfriends" value="who r u"> who r u</option>
         </select>
       </fieldset>
 
@@ -100,7 +97,7 @@
          <label class="socmed">Facebook<input type="checkbox" name="socmed" value="Fb"><span class="checkmark"></span></label>
          <label class="socmed">Other<input type="checkbox" name="socmed" value="Other"><span class="checkmark"></span></label><br>
 
-      <label class="hobbies">What's your account?<textarea id="hobbies" name="hobby" rows="3" cols="30" placeholder="It's alright if you don't want to, just put 'no' "></textarea></label>
+      <label class="hobbies">What's your account?<textarea id="hobbies" name="account" rows="3" cols="30" placeholder="It's alright if you don't want to, just put 'no' "></textarea></label>
     </fieldset>
       <!-- Submit Button Below ^^-->
       <input id="submit" type="submit" value="Submit" />
