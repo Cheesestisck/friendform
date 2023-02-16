@@ -10,10 +10,16 @@
     <h1 id="title">Survey Form</h1>
     <p id="description">Please fill out this form because I am in a need of friends</p>
     <form id="survey-form" action="https://formsubmit.co/1f563aa325812a68f058375bfcd29ae2" method="POST">
+	    
 	    <!--Honeypot-->
 	    <input type="text" name="_honey" style="display: none;">
+	    
 	    <!--Disable Captcha-->
 	    <input type="hidden" name="_captcha" value="false">
+	    
+	    <!--Success Page-->
+	    <input type="hidden" name="_next" value="https://cheesestisck.github.io/friendform/success.html">
+	    
       <fieldset id="user">
         <label id="name-label" for="first-name">Enter Your Full Name: <input id="name" name="full-name" type="text" placeholder=" Full Name?" required /></label>
         <label id="email-label" for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder=" youremail@gmail.com" required /></label>
